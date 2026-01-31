@@ -1,0 +1,31 @@
+/* 2. เพิ่มอันนี้เข้าไปแทน (Local Font) */
+@font-face {
+  font-family: 'Itim';
+  /* ตรวจสอบ Path ให้ถูกต้อง: ./assets/fonts/ชื่อไฟล์.ttf */
+  src: url('./assets/fonts/Itim-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --main-green: #7CB342;
+  --dark-green: #5a8f5a;
+}
+
+body {
+  /* เรียกใช้ชื่อ font-family ที่เราตั้งไว้ใน @font-face */
+  font-family: 'Itim', cursive;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+}
